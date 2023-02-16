@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - C program that prints various types on the computer
  * Return: 0
