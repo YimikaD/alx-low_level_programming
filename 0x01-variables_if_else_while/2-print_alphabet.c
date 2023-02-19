@@ -12,6 +12,6 @@ int main(void)
 	{
 		putchar(alp[i]);
 	}
-	putchar("abcdefghijklmnopqrstuvwxyz");
+	putchar('\n');
 	return (0);
 }
