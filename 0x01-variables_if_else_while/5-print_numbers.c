@@ -5,10 +5,10 @@
  */
 int main (void)
 {
-	int num;
+	int nums;
 
-	for (num = 0; num < 10; num++)
-		printf("%d", num);
-	printf('\n');
+	for (nums = 0; nums < 10; nums++)
+		printf("%d", nums);
+	printf("\n");
 	return (0);
 }
