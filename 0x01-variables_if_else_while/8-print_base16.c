@@ -7,12 +7,13 @@ int main(void)
 {
 	int nums;
 
-	char i;
+	char ia;
 
 	for (nums = 0; nums < 10; nums++)
 		putchar((nums % 10) + '0');
-	for (i = 'a'; i <= 'f'; i++);
-	putchar(i);
+
+	for (ia = 'a'; ia <= 'f'; ia++);
+	putchar(ia);
 
 	putchar('\n');
 	return (0);
