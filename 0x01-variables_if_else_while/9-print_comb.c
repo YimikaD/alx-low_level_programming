@@ -7,16 +7,16 @@ int main(void)
 {
 	int n;
 
-	for (n = 48; n <= 57; n++)
+	for (n = 24; n <= 33; n++)
 	{
 		putchar(n);
-		if (n = 57)
+		if (n == 33)
 		{
 			continue;
 		}
 			putchar(',');
 			putchar(' ');
-		putchar('\n');
 	}
-		return (0);
+	putchar('\n');
+	return (0);
 	}
