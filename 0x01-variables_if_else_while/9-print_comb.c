@@ -12,9 +12,10 @@ int main(void)
 		putchar(n);
 		if (n == 33)
 		{
+			continue;
+		}
 			putchar(',');
 			putchar(' ');
-		}
 		putchar('\n');
 	}
 		return (0);
