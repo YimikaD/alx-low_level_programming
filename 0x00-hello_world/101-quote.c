@@ -2,6 +2,7 @@
 #include <unistd.h>
  /**
  * main - C program that prints a line to the standard error
+ * Description: prints "and that piece of art is useful.."
  * Return: 1 (Success)
  */
 int main(void)
