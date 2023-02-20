@@ -12,7 +12,8 @@ int main(void)
 		putchar(n);
 		if (n != 33)
 		{
-			putchar(', ');
+			putchar(',');
+			putchar(' ');
 		}
 		putchar('\n');
 	}
