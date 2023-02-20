@@ -2,7 +2,8 @@
 #include <unistd.h>
  /**
  * main - Entry point
- * Description: A program that prints and that piece of art is useful" - Dora Korpar, 2015-10-19"
+ * Description: A program that prints
+ *  and that piece of art is useful" - Dora Korpar, 2015-10-19"
  * Return: 1 (Success)
  */
 int main(void)
