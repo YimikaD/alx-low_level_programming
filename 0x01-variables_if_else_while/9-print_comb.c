@@ -10,7 +10,7 @@ int main(void)
 	for (n = 10; n < 20; n++)
 	{
 		putchar(n);
-		if (n != 19);
+		if (n != 19)
 		{
 			putchar(',');
 			putchar(',');
