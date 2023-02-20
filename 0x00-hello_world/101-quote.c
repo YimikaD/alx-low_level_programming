@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
  /**
- * main - C program that prints a line to the standard error
- * Description: prints "and that piece of art is useful.."
+ * main - C program that prints "and that piece of art is useful.." without put
  * Return: 1 (Success)
  */
 int main(void)
