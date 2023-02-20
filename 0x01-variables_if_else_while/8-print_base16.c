@@ -6,12 +6,12 @@
 int main(void)
 {
 	int nums;
-	char la;
-	
+	char ia;
+
 for (nums = 0; nums < 10; nums++)
-		putchar((nums % 10) + '0');
-for (la = 'a'; la <= 'f'; la++)
-	putchar(la);
+	putchar((nums % 10) + '0');
+for (ia = 'a'; ia <= 'f'; ia++)
+	putchar(ia);
 putchar('\n');
 return (0);
 }
