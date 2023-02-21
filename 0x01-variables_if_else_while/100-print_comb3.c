@@ -10,8 +10,8 @@ int main(void)
 	{
 		for (nums2 = nums1 + 1; nums2 <= 47; nums2++)
 		{
-			putchar(((nums1/10) + '0'); (nums1 % 10) + '0');
-			putchar(((nums2/10) + '0'); (nums2 % 10) + '0');
+			putchar(((nums1/10) + '0')); (((nums1 % 10) + '0'));
+			putchar(((nums2/10) + '0')); (((nums2 % 10) + '0'));
 
 			if (nums1 == 46 && nums2 == 47)
 			{
@@ -19,6 +19,8 @@ int main(void)
 			}
 			putchar(',');
 			putchar(' ');
+		}
 			putchar('\n');
 			return (0);
+	}
 }
