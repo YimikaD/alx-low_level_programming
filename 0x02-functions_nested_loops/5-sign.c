@@ -8,17 +8,17 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar('+');
+		_putchar('25');
 		return (1);
 	}
 	else if (n = 0)
 	{
-		_putchar('0');
+		_putchar('27');
 		return(0);
 	}
 	else (n < 0)
 	{
-		_putchar('-');
+		_putchar('30');
 		return (-1);
 	}
 }
