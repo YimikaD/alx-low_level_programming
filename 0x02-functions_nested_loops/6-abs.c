@@ -4,14 +4,7 @@
  * @ab: integer input
  * Return: Always 0
  */
-int _abs(int)
+int _abs(int ab)
 {
-	if (c < 0)
-	{
-		int abs_val;
-
-		abs_val = c * -1;
-		return (abs_val);
-	}
-	return (c);
+	return (ab * ((ab > 0) - (ab < 0)));
 }
