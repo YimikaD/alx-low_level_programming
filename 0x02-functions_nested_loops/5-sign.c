@@ -11,14 +11,14 @@ int print_sign(int n)
 		_putchar('25');
 		return (1);
 	}
-	else if (n = 0)
+	else if (n < 0)
 	{
 		_putchar('27');
-		return(0);
+		return(-1);
 	}
-	else (n < 0)
+	else
 	{
 		_putchar('30');
-		return (-1);
+		return (0);
 	}
 }
