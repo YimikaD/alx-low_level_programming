@@ -19,7 +19,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				p = num * m;
 				if (p <= 99)
-					_Putchar(' ');
+					_putchar(' ');
 				if (p <= 9)
 					_putchar(' ');
 				if (p >= 100)
@@ -31,7 +31,7 @@ void print_times_table(int n)
 				{
 						_putchar((p / 10) + '0');
 				}
-						_putchar((p % 100 + '0');
+						_putchar((p % 100) + '0');
 			}
 						_putchar('\n');
 		}
