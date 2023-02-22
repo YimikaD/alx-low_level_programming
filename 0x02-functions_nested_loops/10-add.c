@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * 10-add.c - function that prints two integers
+ * add.c - function that prints two integers
+ * @n1: First number to be computed
+ * @n2: Second number to be computed
  * Return: result of integers
  */
 int add(int n1, int n2)
