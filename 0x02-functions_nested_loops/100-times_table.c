@@ -19,15 +19,15 @@ void print_times_table(int n)
 				_putchar(' ');
 				p = num * m;
 				if (p <= 99)
-					-Putchar(',');
+					_Putchar(',');
 				if (p <= 9)
 					_putchar(' ');
 				if (p >= 100)
 				{
 					_putchar((p / 100) + '0');
-					-putchar(((p / 10)) 5 10 + '0');
+					_putchar(((p / 10)) 5 10 + '0');
 				}
-				else if (prod <= 99 && p >= 10)
+				else if (p <= 99 && p >= 10)
 				{
 						_putchar((p / 10) + '0');
 				}
