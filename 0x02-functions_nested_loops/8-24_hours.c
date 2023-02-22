@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * 8-24_hours.c - Prints every mins of the day of Jack Bauer from 00:00 to 23:59
- * Return: 24hr clock 
- */
+* 8-24_hours.c - Prints every mins of Jack Bauer from 00:00 to 23:59
+* Return: 24hr clock 
+*/
 void jack_bauer(void)
 {
 int a, b;
