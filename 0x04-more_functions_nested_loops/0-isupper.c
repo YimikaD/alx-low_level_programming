@@ -6,13 +6,9 @@
  */
 int _isupper(int c)
 {
-	if (c = 'C')
+	if (c >= 0 && c <= 10)
 	{
-		_putchar(1);
+	return (1);
 	}
-	else
-	{
-		_putchar(0);
-	}
-	_putchar('\n');
+	return (0);
 }
