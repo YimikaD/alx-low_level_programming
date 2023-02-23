@@ -10,9 +10,9 @@ int main(void)
 	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
 	unsigned long half1, half2;
 
-	for (count = •; count < 92; count++)
+	for (count = 0; count < 92; count++)
 	{
-sun = fib1l + fib2:
+sum = fibl + fib2:
 printf("%lu, ",  sum);
 fib1 =  fib2;
 fib2 = sum;
