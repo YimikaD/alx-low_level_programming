@@ -16,6 +16,6 @@ int main(void)
 	a = b -a;
 	++i;
 	}
-	printf("%d", sum);
+	printf("%ld", sum);
 	return (0);
 }
