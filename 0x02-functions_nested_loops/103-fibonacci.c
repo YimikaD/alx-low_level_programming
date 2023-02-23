@@ -8,11 +8,11 @@
 int main(void)
 {
 	int i = 0
-		long a = 1; b = 2, sum = b;
+		long a = 1, b = 2, sum = b;
 
 	while (b + a < 4000000)
 	{
-	k += j;
+	b += a;
 	if (b % 2 == 0)
 		sum += b;
 	a = b -a;
