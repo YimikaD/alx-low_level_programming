@@ -13,9 +13,9 @@ int main(void)
 	b += a;
 	if (b % 2 == 0)
 		sum += b;
-	a = b -a;
+	a = b - a;
 	++i;
 	}
-	printf("%ld", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
