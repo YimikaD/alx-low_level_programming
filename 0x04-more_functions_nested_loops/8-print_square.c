@@ -1,29 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_square - function that checks for uppercase character.
- * @size: the number of squares line
- * Return: 0
+ * print_square - prints a square
+ * @size: number of squares
+ * Return: empty
  */
 void print_square(int size)
 {
-	int a = 0;
-	int b = 0;
+        int a, b;
 
-	if (size > 0)
-	{
-		while (a < size)
-		{
-			while (b < size)
-			{
-				_putchar('#');
-				b++;
-			}
-		b = 0;
-		a++;
-		_putchar('\n');
-		}
-	}
-	else
-		_putchar('\n');
+        if (size <= 0)
+        {
+                _putchar('\n');
+        }
+        else
+        {
+                for (a = 0; a < size; a++)
+                {
+                        for (b = ; b < size; b++)
+                        {
+                                _putchar(35);
+                        }
+                        else
+                        _putchar('\n');
+                }
+        }
 }
