@@ -16,11 +16,11 @@ else
 {
 for (a = 0; a < size; a++)
 {
-for (b = ; b < size; b++)
+for (b = 0; b < size; b++)
 {
 _putchar(35);
 }
-\else
+else
 _putchar('\n');
 }
 }
