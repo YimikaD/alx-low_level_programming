@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_square - function that checks for uppercase character.
  * @size: the number of squares line
