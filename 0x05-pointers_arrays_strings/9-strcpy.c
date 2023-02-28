@@ -8,10 +8,12 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char str[1];
-	char str[2];
 	int n;
 
-	strcpy(str2, str1);
-   printf("strcpy( str2, str1) :  %s\n", str2 );
+	for (n = 0; src[n] != '/0'; n++)
+	{
+		dest[n] = src[n];
+	}
+	dest[n++] = '/0';
+	return (dest);
 }
