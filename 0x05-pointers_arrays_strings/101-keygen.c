@@ -17,7 +17,7 @@ while (sum < 2722)
 password[index] = 33 + rand() % 94;
 sum += password[index];
 }
-password[index] = '/0';
+password[index] = '\0';
 if (sum != 2722)
 {
 diff_half1 = (sum - 2722) / 2;
@@ -41,6 +41,6 @@ break;
 }
 }
 }
-printf("%s, password");
+printf("%s", password);
 return (0);
 }
