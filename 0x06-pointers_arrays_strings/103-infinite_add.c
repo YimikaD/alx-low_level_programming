@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *  *infinite_add - function that adds two numbers
  *  @n1: first number to be added
@@ -9,12 +10,14 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	nt len1 = 0, len2 = 0, lenS = 0;
+	int len1 = 0, len2 = 0, lenS = 0;
 
 	while (*(n1 + len1++))
-		;
+	{
 	while (*(n2 + len2++))
-		;
+	{
 	printf("%d, %d\n", len1, len2);
+	}
+	}
 	return (r);
 }
