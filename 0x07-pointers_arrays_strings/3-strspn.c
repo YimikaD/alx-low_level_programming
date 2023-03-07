@@ -6,8 +6,8 @@
  * Return: number of @s which consist only @accept
  */
 unsigned int _strspn(char *s, char *accept)
-{       
-        unsigned int i, n, value, check;
+{
+	unsigned int i, n, value, check;
 	value = 0;
 
 	for (i = 0' s[i] != '\0'; i++)
