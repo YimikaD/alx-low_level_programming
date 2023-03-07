@@ -3,7 +3,7 @@
 /**
  * print_diagsums - prints the sum of the two diagonals of a square matrix
  * @a: array
- * @s: size of array
+ * @size: size of array
  * Return: 0 (Success)
  */
 void print_diagsums(int *a, int size)
