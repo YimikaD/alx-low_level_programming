@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>.
 /**
  * primeFinder - searches for if a number is prime
  *
