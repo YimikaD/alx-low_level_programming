@@ -23,7 +23,7 @@ int primeFinder(int a, int b)
 /**
  * is_prime_number - returns 1 if a number is prime
  * @n: the number to check
- * Return: 0 if the number is not prime, and 1 if it is
+ * Return: integer value
  */
 
 int is_prime_number(int n)
