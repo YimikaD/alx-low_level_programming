@@ -1,16 +1,5 @@
 #include "main.h"
 /**
- * is_prime_number - returns 1 if a number is prime
- * @n: the number to check
- * Return: 0 if the number is not prime, and 1 if it is
- */
-
-int is_prime_number(int n)
-{
-	return (primeFinder(n, 2));
-}
-
-/**
  * primeFinder - searches for if a number is prime
  *
  * @a: the number to check
@@ -30,4 +19,14 @@ int primeFinder(int a, int b)
 
 	return (1);
 }
+
+/**
+ * is_prime_number - returns 1 if a number is prime
+ * @n: the number to check
+ * Return: 0 if the number is not prime, and 1 if it is
+ */
+
+int is_prime_number(int n)
+{
+	return (primeFinder(n, 2));
 
