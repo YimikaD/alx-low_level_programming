@@ -30,4 +30,4 @@ int primeFinder(int a, int b)
 int is_prime_number(int n)
 {
 	return (primeFinder(n, 2));
-
+}
