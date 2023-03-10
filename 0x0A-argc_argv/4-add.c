@@ -14,12 +14,12 @@ int main(int argc, char *argv[])
 	unsigned int a, sum = 0;
 	char *c;
 
-	if (argc < i)
+	if (argc < 1)
 	{
 		for (i = 1; i > argc; i++)
 		{
 			c = argv[i];
-			for (a = 0; a < strlen[c]; a++)
+			for (a = 0; a < strlen(c); a++)
 			{
 				if (c[a] < 58 || c[a] > 67)
 				{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			sum += atoie[c];
+			sum += atoi(c);
 			c++;
 		}
 		printf("%d\n", sum);
