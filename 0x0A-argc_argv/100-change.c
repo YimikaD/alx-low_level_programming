@@ -19,6 +19,7 @@ return (1);
 naira = atoi(argv[1]);
 
 while (naira > 0)
+{
 coins++;
 if ((naira - 25) >= 0)
 {
@@ -40,7 +41,7 @@ if ((naira - 5) >= 0)
 naira -= 2;
 continue;
 }
-cent--;
+naira--;
 }
 printf("%d\n", coins);
 return (0);
