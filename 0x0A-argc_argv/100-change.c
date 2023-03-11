@@ -16,32 +16,32 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-naira = atoi(argv[1]);
+cent = atoi(argv[1]);
 
-while (naira > 0)
+while (cent > 0)
 {
 coins++;
-if ((naira - 25) >= 0)
+if ((cent - 25) >= 0)
 {
-naira -= 25;
+cent -= 25;
 continue;
 }
-if ((naira - 10) >= 0)
+if ((cent - 10) >= 0)
 {
-naira -= 10;
+cent -= 10;
+continue;
+}
+if ((cent - 5) >= 0)
+{
+cent -= 5;
 continue;
 }
 if ((naira - 5) >= 0)
 {
-naira -= 5;
+cent -= 2;
 continue;
 }
-if ((naira - 5) >= 0)
-{
-naira -= 2;
-continue;
-}
-naira--;
+cent--;
 }
 printf("%d\n", coins);
 return (0);
