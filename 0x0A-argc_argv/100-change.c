@@ -5,43 +5,43 @@
  * main - prints the minimun num of coins to get change for an amount
  * @argc: argument count
  * @argv: argument vector
- * Return: 0 (Success)
+ * Return: -1 if the number of argument is not exactly one, 0 if otherwise
  */
 int main(int argc, char *argv[])
 {
-int naira, coins;
+int cents, coins;
 
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-cent = atoi(argv[1]);
+cents = atoi(argv[1]);
 
-while (cent > 0)
+while (cents > 0)
 {
 coins++;
-if ((cent - 25) >= 0)
+if ((cents - 25) >= 0)
 {
-cent -= 25;
+cents -= 25;
 continue;
 }
-if ((cent - 10) >= 0)
+if ((cents - 10) >= 0)
 {
-cent -= 10;
+cents -= 10;
 continue;
 }
-if ((cent - 5) >= 0)
+if ((cents - 5) >= 0)
 {
-cent -= 5;
+cents -= 5;
 continue;
 }
-if ((naira - 5) >= 0)
+if ((cents - 5) >= 0)
 {
-cent -= 2;
+cents -= 2;
 continue;
 }
-cent--;
+cents--;
 }
 printf("%d\n", coins);
 return (0);
