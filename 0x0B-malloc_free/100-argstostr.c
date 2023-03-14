@@ -9,7 +9,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int a = 0, b = 0, c = 0, d = 0;
+	int ch = 0, b = 0, c = 0, d = 0;
 	char *s;
 
 	if (ac == 0 || av == NULL)
@@ -18,13 +18,13 @@ char *argstostr(int ac, char **av)
 	{
 		while (av[b][c])
 		{
-			a++;
+			ch++;
 			c++;
 		}
 		c = 0;
 		b++;
 	}
-	s = malloc((sizeof(char) * a) +  ac + 1);
+	s = malloc((sizeof(char) * ch) +  ac + 1);
 	b = 0;
 	while (av[b])
 	{
