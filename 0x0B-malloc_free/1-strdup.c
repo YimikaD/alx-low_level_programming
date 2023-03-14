@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 /**
  * *_strdup - returns apointer to a newly allocated space
@@ -28,7 +26,7 @@ char *_strdup(char *str)
 	}
 	while (n < i)
 	{
-		p[n] == str[n];
+		p[n] = str[n];
 		n++;
 	}
 	p[n] = '\0';
