@@ -5,7 +5,7 @@
  * *argstostr - concatenates all the programs arguments
  * @argc: argument count
  * @argv: argument vector
- * Return: 0
+ * Return: pointer to string or NULL if it fails
  */
 char *argstostr(int ac, char **av)
 {
@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 		while (av[b][c])
 		{
 			a++;
-			b++;
+			c++;
 		}
 		c = 0;
 		b++;
