@@ -3,9 +3,9 @@
 #include <stdlib.h>
 /**
  * *argstostr - concatenates all the programs arguments
- * @argc: argument count
- * @argv: argument vector
- * Return: pointer to string or NULL if it fails
+ * @ac: argument count
+ * @av: argument vector
+ * Return: ....
  */
 char *argstostr(int ac, char **av)
 {
@@ -14,6 +14,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
+
 	while (b < ac)
 	{
 		while (av[b][c])
@@ -29,17 +30,17 @@ char *argstostr(int ac, char **av)
 	while (av[b])
 	{
 		while (av[b][c])
-				{
+		{
 				s[d] = av[b][c];
 				d++;
 				b++;
-				}
-				s[d] = '\n';
-				b = 0;
-				d++;
-				b++;
-				}
-				d++;
-				s[d] = '\0';
-				return (s);
-				}
+		}
+		s[d] = '\n';
+		b = 0;
+		d++;
+		b++;
+	}
+	d++;
+	s[d] = '\0';
+	return (s);
+}
