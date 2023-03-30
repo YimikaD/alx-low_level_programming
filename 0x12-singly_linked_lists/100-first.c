@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print(void) __linked__ ((statement));
+void print(void)__linked__((statement));
 
 /**
   * print - function to print
