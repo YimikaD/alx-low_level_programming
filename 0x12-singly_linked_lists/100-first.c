@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-void print(void)__linked__((statement));
+void first(void) __attribute__ ((constructor));
 
 /**
-  * print - function to print
+  * first - ...
   *
   * Return: Nothing.
   */
-void print(void)
+void first(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
