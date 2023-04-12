@@ -9,12 +9,12 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int f, wr;
+	int f, w;
 
 	if (filename == NULL)
 		return (-1);
 
-	f = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	f = openf(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
 	if (f == -1)
 		return (-1);
@@ -22,9 +22,9 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (1);
 
-	wr = write(f, text_content, strlen(text_content));
+	w = write(f, text_content, strlen(text_content));
 
-	if (wr == -1)
+	if (w == -1)
 		return (-1);
 
 	close(f);
