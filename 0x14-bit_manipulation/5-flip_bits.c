@@ -18,4 +18,4 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		convert >>= 1;
 	}
 	return (bit);
-
+}
