@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - A program that copies the content of a file to another file.
@@ -30,7 +28,7 @@
 
 int main(int argc, char *argv[])
 {
-	int f1, f2, r, w;
+	int fd_r, fd_w, r, a, b;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -38,26 +36,36 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	f1 = open(argv[1], O_RDONLY);
-	r = read(f1, buffer, 1024);
-	f2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0600);
-
-	do {
-		if (f1 == -1 || r == -1)
+	fd_r = open(argv[1], O_RDONLY);
+	if (fd_r < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	while ((r = read(fd_r, buffer, BUFSIZ)) > 0)
+	{
+		if (fd_w < 0 || write(fd_w, buffer, r) != r)
 		{
-			dprintf(STDERR_FILENO,
-					"Error: Can't read from %s\n", argv[1]);
-			exit(98);
-		}
-		w = write(f2, buffer, r);
-		if (f2 == -1 || w == -1)
-		{
-			dprintf(STDERR_FILENO,
-					"Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(fd_r);
 			exit(99);
 		}
-		r = read(f1, buffer, 1024);
-		f2 = open(argv[2], O_WRONLY | O_APPEND);
-	} while (r > 0);
+	}
+	if (r < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	a = close(fd_r);
+	b = close(fd_w);
+	if (a < 0 || b < 0)
+	{
+		if (a < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
+		if (b < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
+		exit(100);
+	}
 	return (0);
 }
